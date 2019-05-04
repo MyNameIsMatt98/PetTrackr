@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEvent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <EditText
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/toolbarAddEvent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        />
+
+    <Switch
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/recurring_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Recurring "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+    <Spinner
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/day_of_week_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recurring_switch"
+        />
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:id="@+id/date_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/recurring_switch"
+        android:clickable="true"
+        android:focusable="false"/>
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/recurring_switch"
+        android:hint="Time"
+        android:layout_marginTop="45dp"
+        android:id="@+id/time_edit_text"
+        android:clickable="true"
+        android:focusable="false"/>
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/time_edit_text"
+        android:hint="Location"/>
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/location_edit_text"
+        android:hint="Description"/>
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pet_name_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/description_edit_text"
+        android:hint="Pet Name"/>
+    <Button
+        android:id="@+id/event_save_button"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Add Event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

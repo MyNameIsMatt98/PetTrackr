@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tools:menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pets"
+            android:icon="@drawable/ic_pets"
+            android:title="Pets" />
+        <item
+            android:id="@+id/nav_Today"
+            android:icon="@drawable/ic_today"
+            android:title="Today" />
+        <item
+            android:id="@+id/nav_Schedule"
+            android:icon="@drawable/ic_event"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_Reminders"
+            android:icon="@drawable/ic_schedule"
+            android:title="Reminders" />
+    </group>
+
+</tools:menu>
